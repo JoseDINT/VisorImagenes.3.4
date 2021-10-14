@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
         Title="Visor de imágenes" MinHeight="600" MinWidth="700" Width="700" Height="600">
-    <DockPanel LastChildFill="True" Margin="5">
+    <DockPanel LastChildFill="True" Margin="5" >
 
         <!--Panel Inferior-->
         <DockPanel DockPanel.Dock="Bottom" Margin="5" Background="LightBlue" >
@@ -37,17 +37,17 @@
 
         <!--Panel Izquierdo-->
 
-        <WrapPanel  Margin="5,0,25,5" >
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+        <WrapPanel Margin="5,0,25,5" >
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
         </WrapPanel>
 
     </DockPanel>
