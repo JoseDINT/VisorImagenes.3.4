@@ -37,17 +37,17 @@
 
         <!--Panel Izquierdo-->
 
-        <WrapPanel Background="Beige" Margin="5,0,25,5" >
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+        <WrapPanel  Margin="5,0,25,5" >
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
+            <Image Source="/assets/episodioIV.jpg" Width="100"></Image>
         </WrapPanel>
 
     </DockPanel>
