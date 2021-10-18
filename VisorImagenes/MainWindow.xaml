@@ -9,45 +9,45 @@
     <DockPanel LastChildFill="True" Margin="5" >
 
         <!--Panel Inferior-->
-        <DockPanel DockPanel.Dock="Bottom" Margin="5" Background="LightBlue" >
-            <TextBlock Margin="5" Padding="0,15" Text="Nº de imágenes: 10" FontSize="20" FontFamily="Rubik" Background="LightBlue"/>
-            <TextBlock Margin="5" Padding="0,15" Text="Diseñado por Javier Catalá" FontSize="20" FontFamily="Rubik" Background="LightBlue"  HorizontalAlignment="Right"  />
+        <DockPanel Style="{StaticResource DockPannelInferior}">
+            <TextBlock Style="{StaticResource TextBlockFormato}">Nº de imágenes: 10</TextBlock>
+            <TextBlock Style="{StaticResource TextBlockDerechoFormato}">Diseñado por Javier Catalá</TextBlock>
         </DockPanel>
 
         <!--Panel Derecho-->
-        <Border BorderThickness="3" BorderBrush="Black" CornerRadius="3" DockPanel.Dock="Right" Width="120" Margin="5">
-            <DockPanel Background="LightGreen">
-                <StackPanel DockPanel.Dock="Top">
-                    <Button Content="Añadir imágen" Margin="5"></Button>
-                    <Button Content="Eliminar imágen" Margin="5"></Button>
-                    <Button Content="Eliminar todas" Margin="5"></Button>
+        <Border Style="{StaticResource BordePanelDerecho}">
+            <DockPanel Style="{StaticResource DockPannelDerechoBackground}">
+                <StackPanel Style="{StaticResource StackPanel01Derecho}">
+                    <Button Style="{StaticResource BotonMargen}">Añadir imágen</Button>
+                    <Button Style="{StaticResource BotonMargen}">Eliminar imágen</Button>
+                    <Button Style="{StaticResource BotonMargen}">Eliminar todas</Button>
                 </StackPanel>
 
-                <StackPanel VerticalAlignment="Bottom"  >
-                    <Button Content="Rotar" Margin="5"/>
-                    <Button Content="Recortar" Margin="5"/>
+                <StackPanel Style="{StaticResource StackPanel02Derecho}">
+                    <Button Style="{StaticResource BotonMargen}">Rotar</Button>
+                    <Button Style="{StaticResource BotonMargen}">Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
 
         <!--Panel Superior-->
-        <StackPanel DockPanel.Dock="Top">
-            <TextBlock Padding="0,10" Text="Visor de imágenes" FontSize="40" TextAlignment="Center" FontFamily="Rubik"></TextBlock>
+        <StackPanel Style="{StaticResource StackPannelSuperior}">
+            <TextBlock Style="{StaticResource TextoSuperior}">Visor de imágenes</TextBlock>
         </StackPanel>
 
         <!--Panel Izquierdo-->
 
-        <WrapPanel Margin="5,0,25,5" >
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
-            <Image Source="/assets/episodioIV.jpg" Width="100" Margin="2"></Image>
+        <WrapPanel Style="{StaticResource MargenWrapPanelIzquierdo}">
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
         </WrapPanel>
 
     </DockPanel>
