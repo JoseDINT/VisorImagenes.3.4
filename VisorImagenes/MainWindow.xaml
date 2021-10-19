@@ -6,6 +6,87 @@
         xmlns:local="clr-namespace:VisorImagenes"
         mc:Ignorable="d"
         Title="Visor de imágenes" MinHeight="600" MinWidth="700" Width="700" Height="600">
+    <Window.Resources>
+        <!--Panel Inferior-->
+
+        <Style TargetType="{x:Type DockPanel}" x:Key="DockPannelInferior">
+            <Setter Property="DockPanel.Dock" Value="Bottom"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="LightBlue"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}" x:Key="TextBlockFormato">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="0,15"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Rubik"/>
+            <Setter Property="Background" Value="LightBlue"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}" x:Key="TextBlockDerechoFormato">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="0,15"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Rubik"/>
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+
+        <!--Panel Derecho-->
+
+        <Style TargetType="{x:Type DockPanel}" x:Key="DockPannelDerechoBackground">
+            <Setter Property="Background" Value="LightGreen"/>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}" x:Key="StackPanel01Derecho">
+            <Setter Property="DockPanel.Dock" Value="Top"/>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}" x:Key="StackPanel02Derecho">
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+
+        </Style>
+
+        <Style TargetType="{x:Type Border}" x:Key="BordePanelDerecho">
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="CornerRadius" Value="3" />
+            <Setter Property="DockPanel.Dock" Value="Right" />
+            <Setter Property="Width" Value="120" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+
+        <!--Panel Superior-->
+        <Style TargetType="{x:Type StackPanel }" x:Key="StackPannelSuperior">
+            <Setter Property="DockPanel.Dock" Value="Top"/>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}" x:Key="TextoSuperior">
+            <Setter Property="Padding" Value="0,10"/>
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Rubik"/>
+        </Style>
+
+        <!--Panel Izquierdo-->
+
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Source" Value="//assets//episodioIV.jpg"/>
+        </Style>
+
+        <Style TargetType="{x:Type WrapPanel}" x:Key="MargenWrapPanelIzquierdo">
+            <Setter Property="Margin" Value="5,0,25,5"></Setter>
+        </Style>
+    </Window.Resources>
+
     <DockPanel LastChildFill="True" Margin="5" >
 
         <!--Panel Inferior-->
@@ -18,14 +99,14 @@
         <Border Style="{StaticResource BordePanelDerecho}">
             <DockPanel Style="{StaticResource DockPannelDerechoBackground}">
                 <StackPanel Style="{StaticResource StackPanel01Derecho}">
-                    <Button Style="{StaticResource BotonMargen}">Añadir imágen</Button>
-                    <Button Style="{StaticResource BotonMargen}">Eliminar imágen</Button>
-                    <Button Style="{StaticResource BotonMargen}">Eliminar todas</Button>
+                    <Button >Añadir imágen</Button>
+                    <Button >Eliminar imágen</Button>
+                    <Button >Eliminar todas</Button>
                 </StackPanel>
 
                 <StackPanel Style="{StaticResource StackPanel02Derecho}">
-                    <Button Style="{StaticResource BotonMargen}">Rotar</Button>
-                    <Button Style="{StaticResource BotonMargen}">Recortar</Button>
+                    <Button >Rotar</Button>
+                    <Button >Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
@@ -38,16 +119,17 @@
         <!--Panel Izquierdo-->
 
         <WrapPanel Style="{StaticResource MargenWrapPanelIzquierdo}">
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
-            <Image Style="{StaticResource ImagenWrapPannel}"></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+            <Image></Image>
+
         </WrapPanel>
 
     </DockPanel>
