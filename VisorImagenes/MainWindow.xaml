@@ -32,13 +32,17 @@
             <Setter Property="HorizontalAlignment" Value="Right"/>
         </Style>
 
+        <!--<Style BasedOn="{StaticResource {x:Type TextBlock}}" x:Key="TextBlockDerechoFormato">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>-->
+
         <!--Panel Derecho-->
 
         <Style TargetType="{x:Type DockPanel}" x:Key="DockPannelDerechoBackground">
             <Setter Property="Background" Value="LightGreen"/>
         </Style>
 
-        <Style TargetType="{x:Type Button}">
+        <Style TargetType="{x:Type Button}" x:Key="BotonMargen">
             <Setter Property="Margin" Value="5"/>
         </Style>
 
@@ -85,9 +89,12 @@
         <Style TargetType="{x:Type WrapPanel}" x:Key="MargenWrapPanelIzquierdo">
             <Setter Property="Margin" Value="5,0,25,5"></Setter>
         </Style>
-    </Window.Resources>
 
+
+    </Window.Resources>
     <DockPanel LastChildFill="True" Margin="5" >
+        
+        
 
         <!--Panel Inferior-->
         <DockPanel Style="{StaticResource DockPannelInferior}">
@@ -99,14 +106,14 @@
         <Border Style="{StaticResource BordePanelDerecho}">
             <DockPanel Style="{StaticResource DockPannelDerechoBackground}">
                 <StackPanel Style="{StaticResource StackPanel01Derecho}">
-                    <Button >Añadir imágen</Button>
-                    <Button >Eliminar imágen</Button>
-                    <Button >Eliminar todas</Button>
+                    <Button Style="{StaticResource BotonMargen}">Añadir imágen</Button>
+                    <Button Style="{StaticResource BotonMargen}">Eliminar imágen</Button>
+                    <Button Style="{StaticResource BotonMargen}">Eliminar todas</Button>
                 </StackPanel>
 
                 <StackPanel Style="{StaticResource StackPanel02Derecho}">
-                    <Button >Rotar</Button>
-                    <Button >Recortar</Button>
+                    <Button Style="{StaticResource BotonMargen}">Rotar</Button>
+                    <Button Style="{StaticResource BotonMargen}">Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
